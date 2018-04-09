@@ -61,7 +61,7 @@ int main( void )
 #include "mbedtls/error.h"
 #include "mbedtls/certs.h"
 #include "mbedtls/sha256.h"
-#include "mqttconnectAzure.h"
+#include "mqttconnectserver.h"
 #include <string.h>
 #include "mqtt.h"
 mbedtls_entropy_context entropy;
@@ -208,7 +208,6 @@ int main( void )
         mbedtls_printf( " failed\n  ! mbedtls_ssl_conf_own_cert returned %d\n\n", ret );
         goto exit;
     }	
-	mbedtls_printf("\n KUMAR..... done\n");
     mbedtls_ssl_conf_rng( &conf, mbedtls_ctr_drbg_random, &ctr_drbg );
     mbedtls_ssl_conf_dbg( &conf, my_debug, stdout );
 

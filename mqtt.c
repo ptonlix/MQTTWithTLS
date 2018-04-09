@@ -10,7 +10,7 @@
 #include "mbedtls/error.h"
 #include "mbedtls/certs.h"
 #include "mbedtls/sha256.h"
-#include "mqttconnectAzure.h"
+#include "mqttconnectserver.h"
 
 
 #define MQTT_DUP_FLAG     1<<3
